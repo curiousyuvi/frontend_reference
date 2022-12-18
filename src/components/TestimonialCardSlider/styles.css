@@ -1,0 +1,42 @@
+.testimonial .swiper {
+  max-width: 720px;
+  width: 78%;
+  height: 400px;
+}
+
+.testimonial .swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  font-size: 22px;
+  font-weight: bold;
+  overflow: visible;
+  color: black;
+  filter: drop-shadow(0 0px 13px rgb(0 0 0 / 0.03))
+    drop-shadow(0 0px 5px rgb(0 0 0 / 0.08));
+}
+
+.testimonial .swiper-slide-shadow {
+  display: none;
+}
+
+.testimonial .swiper-button-prev:after {
+  content: "";
+}
+
+.testimonial .swiper-button-next:after {
+  content: "";
+}
+
+.testimonial .swiper-slide:nth-child(1n) {
+  background-color: white;
+}
+
+.testimonial .swiper-slide:nth-child(2n) {
+  background-color: white;
+}
+
+.testimonial .swiper-slide:nth-child(3n) {
+  background-color: white;
+}

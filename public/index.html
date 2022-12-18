@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8" />
+      <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <meta name="theme-color" content="#000000" />
+
+      <meta name="title" content="Solruf- India’s 1st B2B solar marketplace" />
+      <meta
+         name="description"
+         content="Solruf is India’s first B2B solar marketplace & installation platform. We supply top quality solar systems like solar panels, inverters, batteries & water pumps"
+         data-react-helmet="true"
+      />
+      <meta name="locale" content="en_US" />
+      <meta property="og:locale" content="en_US" />
+
+      <meta name="type" content="website" />
+      <meta name="url" content="https://solruf.com/" />
+      <meta name="image" content="/og-image.jpg" />
+      
+      <!-- Open Graph meta tags -->
+      <meta
+         property="og:title"
+         content="Solruf- India’s 1st B2B solar marketplace"
+      />
+      <meta
+         property="og:description"
+         content="Check out our Solar products & services offerings"
+      />
+      
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content="https://solruf.com/" />
+      <meta
+         property="og:image"
+         content="https://i.ibb.co/hRCXC48/og-image.jpg"
+      />
+
+      <meta
+         name="keywords"
+         content="solar energy, Solar Panel Manufacturers, solar panel distributors, solar panel, solar rooftop, solar panel installation, solar panels for home, solar water heater, solar system for home, solar water pump, solar battery, solar inverter, solar garden light, solar streetlight, solar mobile charger, electric bicycle, electric vehicle charging stations, solar home lighting system, Solar inverter, solar battery, solar lightning arrestor, solar earthing electrode, solar acdb, solar dcdb, solar junction box, solar alternating current distribution box, solar alternating current distribution box, solar sc cable, solar dc cable, solar mounting structure, solar charge controller, monocrystalline, polycrystalline"
+      />
+      <meta name="author" content="Solruf" />
+      <meta name="refresh" content="50" />
+
+      <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+      <!-- google fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+      <!-- aos -->
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+      <!-- google fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+         rel="stylesheet"
+      />
+      <script>
+         configObj = {
+            buttonD:
+               'M8 17.333h5.333v4C13.333 22.806 14.527 24 16 24c1.473 0 2.667-1.194 2.667-2.667v-4H24L16 8l-8 9.333z',
+            buttonT:
+               'translate(-1088 -172) translate(832 140) translate(32 32) translate(224)',
+            shadowSize:
+               '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)',
+            roundnessSize: '6px',
+            buttonDToBottom: '32px',
+            buttonDToRight: '32px',
+            selectedBackgroundColor: '#ffd05b',
+            selectedIconColor: '#4d4d4d',
+            buttonWidth: '48px',
+            buttonHeight: '48px',
+            svgWidth: '40px',
+            svgHeight: '40px',
+         };
+         function createButton(obj, pageSimulator) {
+            const body = document.querySelector('body');
+            backToTopButton = document.createElement('span');
+            backToTopButton.classList.add('softr-back-to-top-button');
+            backToTopButton.id = 'softr-back-to-top-button';
+            pageSimulator
+               ? pageSimulator.appendChild(backToTopButton)
+               : body.appendChild(backToTopButton);
+            backToTopButton.style.width = obj.buttonWidth;
+            backToTopButton.style.height = obj.buttonHeight;
+            backToTopButton.style.marginRight = obj.buttonDToRight;
+            backToTopButton.style.marginBottom = obj.buttonDToBottom;
+            backToTopButton.style.borderRadius = obj.roundnessSize;
+            backToTopButton.style.boxShadow = obj.shadowSize;
+            backToTopButton.style.color = obj.selectedBackgroundColor;
+            backToTopButton.style.backgroundColor = obj.selectedBackgroundColor;
+            pageSimulator
+               ? (backToTopButton.style.position = 'absolute')
+               : (backToTopButton.style.position = 'fixed');
+            backToTopButton.style.outline = 'none';
+            backToTopButton.style.bottom = '0px';
+            backToTopButton.style.right = '0px';
+            backToTopButton.style.cursor = 'pointer';
+            backToTopButton.style.textAlign = 'center';
+            backToTopButton.style.zIndex = '10';
+            backToTopButton.style.border = 'solid 2px currentColor';
+            backToTopButton.innerHTML =
+               '<svg class="back-to-top-button-svg" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" > <g fill="none" fill-rule="evenodd"> <path d="M0 0H32V32H0z" transform="translate(-1028 -172) translate(832 140) translate(32 32) translate(164) matrix(1 0 0 -1 0 32)" /> <path class="back-to-top-button-img" fill-rule="nonzero" d="M11.384 13.333h9.232c.638 0 .958.68.505 1.079l-4.613 4.07c-.28.246-.736.246-1.016 0l-4.613-4.07c-.453-.399-.133-1.079.505-1.079z" transform="translate(-1028 -172) translate(832 140) translate(32 32) translate(164) matrix(1 0 0 -1 0 32)" /> </g> </svg>';
+            backToTopButtonSvg = document.querySelector(
+               '.back-to-top-button-svg'
+            );
+            backToTopButtonSvg.style.verticalAlign = 'middle';
+            backToTopButtonSvg.style.margin = 'auto';
+            backToTopButtonSvg.style.justifyContent = 'center';
+            backToTopButtonSvg.style.width = obj.svgWidth;
+            backToTopButtonSvg.style.height = obj.svgHeight;
+            backToTopButton.appendChild(backToTopButtonSvg);
+            backToTopButtonImg = document.querySelector(
+               '.back-to-top-button-img'
+            );
+            backToTopButtonImg.style.fill = obj.selectedIconColor;
+            backToTopButtonSvg.appendChild(backToTopButtonImg);
+            backToTopButtonImg.setAttribute('d', obj.buttonD);
+            backToTopButtonImg.setAttribute('transform', obj.buttonT);
+            if (!pageSimulator) {
+               backToTopButton.style.display = 'none';
+               window.onscroll = function () {
+                  if (
+                     document.body.scrollTop > 20 ||
+                     document.documentElement.scrollTop > 20
+                  ) {
+                     backToTopButton.style.display = 'block';
+                  } else {
+                     backToTopButton.style.display = 'none';
+                  }
+               };
+               backToTopButton.onclick = function () {
+                  document.body.scrollTop = 0;
+                  document.documentElement.scrollTop = 0;
+               };
+            }
+         }
+         document.addEventListener('DOMContentLoaded', function () {
+            createButton(configObj, null);
+         });
+      </script>
+
+      <title>Solruf | Solar Market Place</title>
+   </head>
+   <body>
+      <noscript>You need to enable JavaScript to run this app.</noscript>
+      <div id="root"></div>
+
+      <!-- <script
+         type="text/javascript"
+         src="https://assets.calendly.com/assets/external/widget.js"
+         async
+      ></script> -->
+      <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+      
+    -->
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   </body>
+</html>
